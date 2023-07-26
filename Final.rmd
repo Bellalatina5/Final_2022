@@ -1,12 +1,12 @@
 ---
 title: "Covid91 vaccine study Final2023"
-author: "Put your name here!"
+author: "Marbella Sanchez"
 output: 
   html_document:
     number_sections: true
     toc: true
     toc_depth: 5
-date: "`r Sys.Date()`" 
+date: "July 24,2023" 
 ---
 
 ```{r include=FALSE,echo=FALSE}
@@ -22,19 +22,69 @@ mutate(across(where(is.character), as.factor))
 
 # Introduction
 
-A new  preventative vaccine (covid921) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
+A new preventative vaccine (covid921) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
+
+$H_0$: The Covid vaccine (drug) is not effective in preventing Covid among subgraoups.
+$H_A$: The Covid vaccine (drug) is effective in preventing Covid among subgraups. 
+
 
 ## Males
+
+2.1 Methods 
+
+2.2 Results
+
+2.3 Descriptive Results 
+
+2.4 Graphical Descriptive Results 
+
+2.5 Numerical Descriptive Results 
+
+2.6 Inferential Results 
 
 
 ## Females
 
+3.1 Methods
+
+3.2 Results 
+
+3.3 Descriptive Results 
+
+3.4 Graphical Decriptive Results 
+
+3.5 Numerical Descriptive Results 
+
+3.6 Inferential Results 
 
 ## LGBTQ
 
+4.1. Methods 
+
+4.2 Results 
+
+4.3 Descriptive Results 
+
+4.4 Graphical Decriptive Results 
+
+4.5 Numerical Descriptive Results 
+
+4.6 Inferential Results 
 
 
 ## Druggies
+
+5.1 Methods 
+
+5.2 Results 
+
+5.3 Descriptive Results
+
+5.4 Graphical Descriptive Results 
+
+5.5 Numerical Descriptive Results
+
+5.6 Inferential Results 
 
 
 # Overall Results and Conclusions
