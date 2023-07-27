@@ -529,13 +529,13 @@ Decriptive Results</h3>
 <div id="numerical-descriptive-results-1" class="section level3" number="1.9.2">
 <h3><span class="header-section-number">1.9.2</span> Numerical
 Descriptive Results</h3>
-<pre class="r"><code>table1 &lt;- xtabs(~infected + treatment, data=femaleData)
-rowPerc(table1)</code></pre>
+<pre class="r"><code>table2 &lt;- xtabs(~infected + treatment, data=femaleData)
+rowPerc(table2)</code></pre>
 <pre><code>##          treatment
 ## infected  placebo vaccine  Total
 ##   covid19   60.00   40.00 100.00
 ##   OK        50.12   49.88 100.00</code></pre>
-<pre class="r"><code>colPerc(table1)</code></pre>
+<pre class="r"><code>colPerc(table2)</code></pre>
 <pre><code>##          treatment
 ## infected  placebo vaccine
 ##   covid19    2.04    1.37
@@ -546,13 +546,13 @@ rowPerc(table1)</code></pre>
 <div id="inferential-results-1" class="section level2" number="1.10">
 <h2><span class="header-section-number">1.10</span> Inferential
 Results</h2>
-<pre class="r"><code>chisq.test(table1)</code></pre>
+<pre class="r"><code>chisq.test(table2)</code></pre>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 ## 
-## data:  table1
+## data:  table2
 ## X-squared = 13.246, df = 1, p-value = 0.0002732</code></pre>
-<pre class="r"><code>chisqtestGC(table1)</code></pre>
+<pre class="r"><code>chisqtestGC(table2)</code></pre>
 <pre><code>## Pearson&#39;s Chi-squared test with Yates&#39; continuity correction 
 ## 
 ## Observed Counts:
@@ -577,11 +577,11 @@ Results</h2>
 ## Chi-Square Statistic = 13.246 
 ## Degrees of Freedom of the table = 1 
 ## P-Value = 3e-04</code></pre>
-<pre class="r"><code>fisher.test(table1)</code></pre>
+<pre class="r"><code>fisher.test(table2)</code></pre>
 <pre><code>## 
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
-## data:  table1
+## data:  table2
 ## p-value = 0.0002162
 ## alternative hypothesis: true odds ratio is not equal to 1
 ## 95 percent confidence interval:
@@ -614,13 +614,13 @@ Decriptive Results</h3>
 <div id="numerical-descriptive-results-2" class="section level3" number="1.14.2">
 <h3><span class="header-section-number">1.14.2</span> Numerical
 Descriptive Results</h3>
-<pre class="r"><code>table1 &lt;- xtabs(~infected +treatment, data=LGBTQData)
-rowPerc(table1)</code></pre>
+<pre class="r"><code>table3 &lt;- xtabs(~infected +treatment, data=LGBTQData)
+rowPerc(table3)</code></pre>
 <pre><code>##          treatment
 ## infected  placebo vaccine  Total
 ##   covid19   15.38   84.62 100.00
 ##   OK        50.02   49.98 100.00</code></pre>
-<pre class="r"><code>colPerc(table1)</code></pre>
+<pre class="r"><code>colPerc(table3)</code></pre>
 <pre><code>##          treatment
 ## infected  placebo vaccine
 ##   covid19    0.66    3.54
@@ -631,13 +631,13 @@ rowPerc(table1)</code></pre>
 <div id="inferential-results-2" class="section level2" number="1.15">
 <h2><span class="header-section-number">1.15</span> Inferential
 Results</h2>
-<pre class="r"><code>chisq.test(table1)</code></pre>
+<pre class="r"><code>chisq.test(table3)</code></pre>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 ## 
-## data:  table1
+## data:  table3
 ## X-squared = 29.159, df = 1, p-value = 6.668e-08</code></pre>
-<pre class="r"><code>chisqtestGC(table1)</code></pre>
+<pre class="r"><code>chisqtestGC(table3)</code></pre>
 <pre><code>## Pearson&#39;s Chi-squared test with Yates&#39; continuity correction 
 ## 
 ## Observed Counts:
@@ -662,11 +662,11 @@ Results</h2>
 ## Chi-Square Statistic = 29.1588 
 ## Degrees of Freedom of the table = 1 
 ## P-Value = 0</code></pre>
-<pre class="r"><code>fisher.test(table1)</code></pre>
+<pre class="r"><code>fisher.test(table3)</code></pre>
 <pre><code>## 
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
-## data:  table1
+## data:  table3
 ## p-value = 1.029e-08
 ## alternative hypothesis: true odds ratio is not equal to 1
 ## 95 percent confidence interval:
@@ -699,13 +699,13 @@ Descriptive Results</h3>
 <div id="numerical-descriptive-results-3" class="section level3" number="1.19.2">
 <h3><span class="header-section-number">1.19.2</span> Numerical
 Descriptive Results</h3>
-<pre class="r"><code>table1 &lt;- xtabs (~infected + treatment, data=DruggiesData)
-rowPerc(table1)</code></pre>
+<pre class="r"><code>table4 &lt;- xtabs (~infected + treatment, data=DruggiesData)
+rowPerc(table4)</code></pre>
 <pre><code>##          treatment
 ## infected  placebo vaccine  Total
 ##   covid19   11.67   88.33 100.00
 ##   OK        51.19   48.81 100.00</code></pre>
-<pre class="r"><code>colPerc(table1)   </code></pre>
+<pre class="r"><code>colPerc(table4)   </code></pre>
 <pre><code>##          treatment
 ## infected  placebo vaccine
 ##   covid19     0.4    3.06
@@ -716,13 +716,13 @@ rowPerc(table1)</code></pre>
 <div id="inferential-results-3" class="section level2" number="1.20">
 <h2><span class="header-section-number">1.20</span> Inferential
 Results</h2>
-<pre class="r"><code>chisq.test(table1)</code></pre>
+<pre class="r"><code>chisq.test(table4)</code></pre>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 ## 
-## data:  table1
+## data:  table4
 ## X-squared = 35.289, df = 1, p-value = 2.842e-09</code></pre>
-<pre class="r"><code>chisqtestGC(table1)</code></pre>
+<pre class="r"><code>chisqtestGC(table4)</code></pre>
 <pre><code>## Pearson&#39;s Chi-squared test with Yates&#39; continuity correction 
 ## 
 ## Observed Counts:
@@ -747,11 +747,11 @@ Results</h2>
 ## Chi-Square Statistic = 35.2889 
 ## Degrees of Freedom of the table = 1 
 ## P-Value = 0</code></pre>
-<pre class="r"><code>fisher.test(table1)</code></pre>
+<pre class="r"><code>fisher.test(table4)</code></pre>
 <pre><code>## 
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
-## data:  table1
+## data:  table4
 ## p-value = 2.32e-10
 ## alternative hypothesis: true odds ratio is not equal to 1
 ## 95 percent confidence interval:
