@@ -30,61 +30,127 @@ $H_A$: The Covid vaccine (drug) is effective in preventing Covid among subgraups
 
 ## Males
 
-2.1 Methods 
+## Methods 
 
-2.2 Results
+```{r}
+maleData = filter (FinalData, sex =="M")
+```
 
-2.3 Descriptive Results 
 
-2.4 Graphical Descriptive Results 
+## Results
 
-2.5 Numerical Descriptive Results 
+## Descriptive Results 
 
-2.6 Inferential Results 
+### Graphical Descriptive Results 
+```{r}
+barchartGC(~infected+treatment,data=maleData)
+barchartGC(~infected+treatment,data=maleData,type="percent")
+```
+
+
+### Numerical Descriptive Results 
+```{r}
+table1 <-xtabs(~infected+treatment,data=maleData)
+rowPerc (table1)
+colPerc (table1)
+```
+## Inferential Results 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 ## Females
 
-3.1 Methods
+## Methods
 
-3.2 Results 
+## Results 
+```{r}
+femaleData = filter(FinalData, sex == "F")
+```
 
-3.3 Descriptive Results 
 
-3.4 Graphical Decriptive Results 
+## Descriptive Results 
 
-3.5 Numerical Descriptive Results 
+### Graphical Decriptive Results 
 
-3.6 Inferential Results 
-
+### Numerical Descriptive Results 
+```{r}
+table1 <- xtabs(~infected + treatment, data=femaleData)
+rowPerc(table1)
+colPerc(table1)
+```
+## Inferential Results 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 ## LGBTQ
 
-4.1. Methods 
+## Methods 
 
-4.2 Results 
+## Results 
+```{r}
+LGBTQData = filter(FinalData, LGBTQ == "gay")
+```
 
-4.3 Descriptive Results 
+## Descriptive Results 
 
-4.4 Graphical Decriptive Results 
+### Graphical Decriptive Results 
+```{r}
+barchartGC(~infected+treatment,data=LGBTQData)
+barchartGC(~infected+treatment,data=LGBTQData, type="percent")
+```
 
-4.5 Numerical Descriptive Results 
-
-4.6 Inferential Results 
-
+### Numerical Descriptive Results 
+```{r}
+table1 <- xtabs(~infected +treatment, data=LGBTQData)
+rowPerc(table1)
+colPerc(table1)
+```
+## Inferential Results 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 ## Druggies
 
-5.1 Methods 
+## Methods 
 
-5.2 Results 
+## Results 
+```{r}
+DruggiesData = filter(FinalData, DrugUser == "yes")
+```
 
-5.3 Descriptive Results
 
-5.4 Graphical Descriptive Results 
+## Descriptive Results
 
-5.5 Numerical Descriptive Results
+### Graphical Descriptive Results 
+```{r}
+barchartGC(~infected+treatment,data=DruggiesData)
+barchartGC(~infected+treatment,data=DruggiesData, type="percent")
+```
 
-5.6 Inferential Results 
 
+### Numerical Descriptive Results
+
+```{r}
+table1 <- xtabs (~infected + treatment, data=DruggiesData)
+rowPerc(table1)
+colPerc(table1)   
+```
+
+
+## Inferential Results 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 # Overall Results and Conclusions
