@@ -32,6 +32,10 @@ $H_A$: The Covid vaccine (drug) is effective in preventing Covid among subgraups
 
 ## Methods 
 
+This statistical analysis we will be using is catergorical ~ categorical, because the COVID vaccine should be effective among subgroups
+
+The method we will be using to display the data us a bar chart, cross table, and chisq test
+
 ```{r}
 maleData = filter (FinalData, sex =="M")
 ```
